@@ -7,14 +7,16 @@ Created on Sat Jan 14 15:20:14 2023
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
+from os import path
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/HP/OneDrive/Documents/Ml Project/Multiple disease prediction/Model/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open(path.join('Model','diabetes_model.sav'), 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/HP/OneDrive/Documents/Ml Project/Multiple disease prediction/Model/heart_model.sav','rb'))
+heart_disease_model = pickle.load(open(path.join('Model','heart_model.sav'),'rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/HP/OneDrive/Documents/Ml Project/Multiple disease prediction/Model/parkinson_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(path.join('Model','parkinson_model.sav'), 'rb'))
+
 
 
 
