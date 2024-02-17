@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-heart_data=pd.read_csv("/content/drive/MyDrive/ML_projects_data/heart_disease_data.csv")
+heart_data=pd.read_csv("uday-venkatesha/Multiple_disease_prediction/Data Set/heart_disease_data.csv")
 
 heart_data.head()
 

@@ -15,7 +15,7 @@ from sklearn import svm
 from sklearn.metrics import accuracy_score
 
 # loading the data from csv file to a Pandas DataFrame
-parkinsons_data = pd.read_csv('/content/drive/MyDrive/ML_projects_data/Parkinsson disease.csv')
+parkinsons_data = pd.read_csv('uday-venkatesha/Multiple_disease_prediction/Data Set/Parkinsson disease.csv')
 
 # printing the first 5 rows of the dataframe
 parkinsons_data.head()
