@@ -142,9 +142,13 @@ def main():
         # creating a button for Prediction
         
         if st.button('Heart Disease Test Result'):
-            heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                          
+            col=[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]
+            col = [float(item) for item in col]
+
+            heart_prediction = heart_disease_model.predict([col])                          
             
             if (heart_prediction[0] == 1):
+                
               heart_diagnosis = 'The person is having heart disease'
             else:
               heart_diagnosis = 'The person does not have any heart disease'
